@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/93/trunk/aw/states
+END
+validated.png
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/15/trunk/aw/states/validated.png
+END
+notvalidated.png
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/15/trunk/aw/states/notvalidated.png
+END
+mail.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/67/trunk/aw/states/mail.jpg
+END
+unknown.png
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/93/trunk/aw/states/unknown.png
+END
+Thumbs.db
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/15/trunk/aw/states/Thumbs.db
+END
+inprocess.png
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/15/trunk/aw/states/inprocess.png
+END
+lock.png
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/46/trunk/aw/states/lock.png
+END

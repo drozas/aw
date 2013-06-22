@@ -1,0 +1,61 @@
+1. Campos requeridos/ No requeridos (REQUISITO) Todos...
+2. EstimatedVerifTime.
+
+	- Poner el tiempo estimado de verificación (Ej. 40 días)
+	- Poner la fecha estimada de verificación (Ej.Fecha de hoy + 40 días)
+	- ¿Esos X días será un número aleatorio por código o será almacenado de manera estática en xml?
+
+3. AllowedEmployeer.
+
+	Esta tabla se nos pasó por alto. Un candidato tiene que permitir a determinados Employeers la 
+	visualización de sus datos, sino el Employeer no los puede ver. Esta tabla pretende precisamente
+	eso, relacionar cada Candidate con los Employeers que quiere que vean sus datos. Es una relación
+	N:M ya que un Candidate permite a varios Employeers y un Employeer tendrá varios Candidate que le
+	han permitido el acceso a sus datos.
+
+4. EmployeerBill
+
+	En la descripcion en papel pusimos que las claves eran CandidateId, EmployeerId y contractingDate.
+	Pero qué pasa si un Employeer contrata el servicio Standar de un candidato y ese mismo día decide
+	contratar (porque se da cuenta de que necesita mas información por ejemplo) el servicio Golden de 
+	ese mismo usuario. Pues que tenemos un mismo Candidate, un mismo Employeer y una misma fecha.
+	Por este motivo he decidido añadir el tipo de servicio a la clave. Otra opción sería que 
+	contractingDate no fuera tipo DATE sino DATETIME y entonces coge tambien los segundos... y no creo
+	que un tio contrate en un segundo dos servicios, pero me parece más correcta la otra forma.
+
+5. Verificator
+	
+	- Un Verificator se encarga de un candidato entero o los datos academicos de un solo candidato pue-
+	den ser verificados por un Verificator y los datos profesionales de ese mismo candidato por otro 
+	Verificator diferente. Si es la primera opción  el Verificator se 
+	relaciona directamente con el	candidato. Si es la segunda opcion  (que es la que he puesto yo) el verificador se relaciona con las
+	3 tablas de datos (ref, acad y prof).
+	- Un Verificator tiene que estar relacionado con los datos que el se encarga de verificar.
+
+6. State
+
+	- Los datos de los Candidate tienen un estado: procesandose, verificado o no verificado. Este campo 
+	estará vacío hasta que el Candidato contrate un servicio (solicite la verificacion de sus datos).
+
+7. Center/Reference Answer
+
+	- Según está modelado se relaciona con cada dato acad o referencia. 
+
+8. Una opcion:
+
+	- Hacer una tabla 'verificaciones' de cada verificador que tendrian:
+		
+		Referencia al id del Verificador
+		Referencia al id del dato acad, ref, o prof.
+		Estado (ver, no ver, procesing)
+		Referencia al id de CenterAnswer o RefAnswer si la hubiera.
+	- Con esta opcion desapareceria la relacion entre verificador y candidate ya que está se veria 
+	reflejada con la relacion entre verifiacioens y los datos del candidato.
+	Tambien desaparecerian los estados de cada dato, ya que los estados estarian en las verificaciones.
+
+9. El Employeer visualiza todo lo que el Candidato tenga ya verificado o tiene que esperar a que tenga TODO
+verificado. Pienso que el employeer puede ver los datos q tenga verificado el Candidato. Hay que tener en cuenta
+que el tiempo estimado de verificacion tiene que ser notablemente menor al tiempo de caducidad de la cuenta del
+Employeer, por si el candidato contrata el servicio y mientras esta esperando a su verificacion llega un Employeer
+y contrata el servicio para obtener los datos de ese candidato. (REQUISITO)
+		

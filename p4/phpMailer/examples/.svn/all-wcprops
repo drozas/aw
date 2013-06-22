@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/59/trunk/aw/phpMailer/examples
+END
+contents.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/59/trunk/aw/phpMailer/examples/contents.html
+END
+test_sendmail.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/59/trunk/aw/phpMailer/examples/test_sendmail.php
+END
+test_mail.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/59/trunk/aw/phpMailer/examples/test_mail.php
+END
+test_smtp.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/59/trunk/aw/phpMailer/examples/test_smtp.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/59/trunk/aw/phpMailer/examples/index.html
+END
+pop3_before_smtp_test.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/59/trunk/aw/phpMailer/examples/pop3_before_smtp_test.php
+END
+test_gmail.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/59/trunk/aw/phpMailer/examples/test_gmail.php
+END

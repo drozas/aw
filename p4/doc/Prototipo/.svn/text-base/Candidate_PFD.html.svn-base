@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+<title>WELLCOME CANDIDATE!</title>
+</head>
+<br>
+<br>
+
+
+<body>
+
+<div id="page">
+	<div id="header"></div>
+	
+	<div id="mainarea">
+	<div id="sidebar">
+		<div id="headerleft">
+			<h1>WELLCOME CANDIDATE!</h1>
+			<h2>Service</h2> <img src="services/silver.png">
+		</div>
+		<div id="menulinks">
+		<a href="Candidate_PD.html">PERSONAL DATA</a>
+		<a href="Candidate_AD.html">ACADEMIC DATA</a>
+		<a class="active" href="#">PROFFESIONAL DATA</a>
+		<a href="Candidate_R.html">REFERENCES</a>
+		<a href="Candidate_S.html">SERVICES</a>
+		<a href="Candidate_E.html">EMPLOYEERS</a>
+		</div>
+	</div>
+		
+	
+	<div id="contentarea">
+		<h2>PROFFESIONAL DATA</h2>
+		Enter your proffesional data.<br><br>
+		<div id="item">
+            <b>Company name:</b> XXXXX S.A.<br>
+			<b>Company address:</b> XXXXX XXXXX<br>
+			<b>Position:</b> XXXXX XXXXX XXXX<br>
+            <div> <b>Start Date:</b> XX/XX/XXXX <b>End Date:</b> XX/XX/XXXX </div>
+			
+			<div id="editordelete"><a href=#>EDIT</a></div>
+			<div id="editordelete"><a href=#>DELETE</a></div>
+			<div> <b>State: </b> <img src="states/inprocess.png"> </div>
+			
+        </div>
+
+		<div id="item">
+            <b>Company name:</b> YYYYY S.A.<br>
+ 			<b>Company address:</b> YYYYY YYYYY<br>
+			<b>Range:</b> YYYYY YYYYY YYYYY<br>
+            <div> <b>Start Date:</b> YY/YY/YYYY <b>End Date:</b> YY/YY/YYYY </div>
+			<div id="editordelete"><a href=#>EDIT</a></div>
+			<div id="editordelete"><a href=#>DELETE</a></div>
+			<div> <b>State: </b> <img src="states/inprocess.png"> </div>
+        </div>
+		
+		<div id="item">
+            <b>Company name:</b> ZZZZZ S.A.<br>
+			<b>Company address:</b> ZZZZZ ZZZZZ<br>
+			<b>Range:</b> ZZZZZ ZZZZZ ZZZZZ<br>
+            <div> <b>Start Date:</b> ZZ/ZZ/ZZZZ <b>End Date:</b> ZZZ/ZZZ/ZZZZ </div>
+			<div id="editordelete"><a href=#>EDIT</a></div>
+			<div id="editordelete"><a href=#>DELETE</a></div>
+			<div> <b>State: </b> <img src="states/inprocess.png"> </div>
+        </div>
+		
+		<div id="linkorbutton"><a href=#>ADD</a></div>
+		
+		
+		
+	</div>
+	
+	
+	
+	<div id="footer">
+		Candidate Validation Service
+	</div>
+
+</div>
+
+</body>
+
+</html>

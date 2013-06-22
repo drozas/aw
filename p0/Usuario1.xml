@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<CorporateNet xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "file:///Z:/AW/Practica/Practica1.xsd">
+	<Aplicacion nombre = "" icono = ""/>
+	<Aplicacion nombre = "Perfil" icono = "../img/icons/perfil.jpg"/>
+	<Aplicacion nombre = "Contactos" icono = "../img/icons/contactos.jpg"/>
+	<Aplicacion nombre = "Documentos" icono = "../img/icons/documentos.jpg"/>
+	<Aplicacion nombre = "Buzon" icono = "../img/icons/buzon.jpg">
+		<InfoEmail mensaje = "Hola, ¿qué tal?" usuarioDestino = "Antonio"/>
+	</Aplicacion>
+	<Aplicacion nombre = "Buscador" icono = "../img/icons/buscador.jpg">
+		<InfoBusqueda nombreUsuario = "Antonio" apellidoUsuario = "Alvarez Huerta"/>
+	</Aplicacion>
+	<Usuario>
+		<Perfil>
+			<DatosPersonales nombre = "David" apellido = "Rozas Domingo" ciudad = "Alcorcón" codigoPostal = "28945" pais = "España" fotografia = "../img/perfil/davidRozas.jpg">
+				<FechaNacimiento mes = "3" dia = "14" año = "1984"/>
+			</DatosPersonales>
+			<DatosProfesionales empresa = "ChurroSoft" puesto = "Precario" ficheroCV = "../data/cv/davidRozas.pdf">
+				<Interes tipoInteres = "Investigador">Aplicaciones Web</Interes>
+				<Interes tipoInteres = "Investigador">Software Libre</Interes>
+				<RedSocial>Tuenti</RedSocial>
+			</DatosProfesionales>
+			<Documento privilegio = "true" tipoDocumento = "WORD" path = "../data/document/traspas.doc"/>
+			<Documento privilegio = "false" tipoDocumento = "PDF" path = "../data/document/pfc.pdf"/>
+		</Perfil>
+		<Contacto nombre = "Ivan Baltasar" email = "rsajor@gmail.com" puesto = "Directivo" red = "Facebook"/>
+		<Contacto nombre = "Antonio Alvarez" email = "aah@tid.es" puesto = "Becario" red = "Tuenti"/>
+	</Usuario>
+</CorporateNet>

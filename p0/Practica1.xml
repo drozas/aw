@@ -1,0 +1,26 @@
+﻿<?xml version = "1.0" encoding = "UTF-8"?>
+<CorporateNet xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "file:///Z:/AW/Practica1.xsd">
+	<Aplicacion nombre = "Perfil" icono = "img/iconoPerfil">
+	</Aplicacion>
+	<Aplicacion nombre = "Contactos" icono = "img/iconoBuzon">
+		<InfoEmail mensaje = "mensaje" usuarioDestino = "Antonio"/>
+	</Aplicacion>
+	<Aplicacion nombre = "Documentos" icono = "img/iconoBuzon">
+		<InfoEmail mensaje = "mensaje" usuarioDestino = "Antonio"/>
+	</Aplicacion>
+	<Aplicacion nombre = "Buzon" icono = "img/iconoBuzon">
+		<InfoEmail mensaje = "mensaje" usuarioDestino = "Antonio"/>
+	</Aplicacion>
+	<Aplicacion nombre = "Buscador" icono = "img/iconoBuscador">
+		<InfoBusqueda nombreUsuario = "Antonio" apellidoUsuario = "Alvarez"/>
+	</Aplicacion>
+	
+	<Usuario>
+		<Perfil>
+			<DatosPersonales nombre = "Antonio" apellido = "Alvarez Huerta" ciudad = "Mostoles" codigoPostal = "28936" pais = "España" fotografia = "">
+				<FechaNacimiento mes = "12" dia = "9" año = "1984"/>
+			</DatosPersonales>
+			<DatosProfesionales empresa = "Telefonica" puesto = "Becario"/>
+		</Perfil>
+	</Usuario>
+</CorporateNet>

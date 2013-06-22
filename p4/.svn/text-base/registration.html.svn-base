@@ -1,0 +1,82 @@
+<script type='text/javascript' src='j/jquery-1.3.js'> </script>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+		<title>WELLCOME CANDIDATE!</title>
+	</head>
+	<br>
+	<br>
+<body>
+
+<div id="page">
+	<div id="header"></div>
+	<div id="mainarea">
+	<div id="sidebar">
+		<div id="headerleft">
+			<h1>WELLCOME!</h1>
+		</div>
+	</div>
+	</div>
+	<div id="contentarea">
+		<h2>Registration</h2>
+		<div id="item">
+			<div class="">
+				<form method=POST name="regist" action="registrateCandidate.php">
+					Candidate:<INPUT type="radio" name="user_type" value="candidate" class="add_candidate"/>
+					Employeer:<INPUT type="radio" name="user_type" value="employeer" class="add_employeer"/><br/>
+					<label for="login">Login:</label>
+					<input type="text" name="login"/>
+					<br/>
+					<label for="password">Password:</label>
+					<input type="password" name="password">
+					<br/>
+					<label for="name">Name:</label>
+					<input type="text" name="name">
+					<br/>
+					<span class="candidate"><label for="lastname">Last name:</label>
+					<input type="text" name="lastname"/><br/></span>
+					
+					<label for="telephone">Telephone:</label>
+					<input type="text" name="telephone">
+					<br/>
+					<label for="address">Address:</label>
+					<input type="text" name="address">
+					<br/>
+					<label for="email">E-mail:</label>
+					<input type="text" name="email">
+					<br/>
+				</FORM>
+			</div>
+			
+			<a class="submit_button">Send</a>
+		</div>
+	
+	</div>
+	<div id="footer">
+		Candidate Validation Service
+	</div>
+</div>
+
+<script language="JavaScript" type="text/javascript">
+	$(document).ready(function() {
+		$('.add_employeer').change(function() {
+			$('.candidate').hide();
+			$('.employeer').show();
+		});
+		$('.add_candidate').change(function() {
+			$('.employeer').hide();
+			$('.candidate').show();
+		});
+		$('.submit_button').click(function() {
+			document.regist.submit();
+		});
+	});
+	
+</script>
+
+</body>
+</html>
